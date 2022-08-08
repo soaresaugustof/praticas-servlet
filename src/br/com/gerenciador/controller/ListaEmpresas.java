@@ -10,7 +10,7 @@ import javax.servlet.http.HttpServletResponse;
 import br.com.gerenciador.vo.Banco;
 import br.com.gerenciador.vo.Empresa;
 
-public class ListaEmpresas {
+public class ListaEmpresas implements Controlador {
 
     public String executa(HttpServletRequest request, HttpServletResponse response)
 	    throws ServletException, IOException {
@@ -20,7 +20,7 @@ public class ListaEmpresas {
 
 	request.setAttribute("empresas", lista);
 
-	return "forward:/listaEmpresas.jsp";
+	return "forward:listaEmpresas.jsp";
 
     }
 

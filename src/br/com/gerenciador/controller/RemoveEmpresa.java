@@ -7,7 +7,7 @@ import javax.servlet.http.HttpServletResponse;
 
 import br.com.gerenciador.vo.Banco;
 
-public class RemoveEmpresa {
+public class RemoveEmpresa implements Controlador {
 
     public String executa(HttpServletRequest request, HttpServletResponse response) throws IOException {
 	System.out.println("removendo dados da empresa");

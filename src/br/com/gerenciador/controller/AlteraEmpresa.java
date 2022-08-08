@@ -12,9 +12,10 @@ import javax.servlet.http.HttpServletResponse;
 import br.com.gerenciador.vo.Banco;
 import br.com.gerenciador.vo.Empresa;
 
-public class AlteraEmpresa {
+public class AlteraEmpresa implements Controlador {
 
-    public void executa(HttpServletRequest request, HttpServletResponse response) throws IOException, ServletException {
+    public String executa(HttpServletRequest request, HttpServletResponse response)
+	    throws IOException, ServletException {
 	String nomeEmpresa = request.getParameter("nome");
 	String dataEmpresa = request.getParameter("data");
 	String paramId = request.getParameter("id");
@@ -34,7 +35,7 @@ public class AlteraEmpresa {
 	empresa.setNome(nomeEmpresa);
 	empresa.setDataAbertura(dataAbertura);
 
-	response.sendRedirect("entrada?acao=ListaEmpresas");
+	return "redirect:entrada?acao=ListaEmpresas";
 
     }
 
