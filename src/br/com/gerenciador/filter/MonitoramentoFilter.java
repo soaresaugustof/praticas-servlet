@@ -1,4 +1,4 @@
-package br.com.gerenciador.servlet;
+package br.com.gerenciador.filter;
 
 import java.io.IOException;
 
