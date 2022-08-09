@@ -10,7 +10,6 @@ import br.com.gerenciador.vo.Banco;
 public class RemoveEmpresa implements Controlador {
 
     public String executa(HttpServletRequest request, HttpServletResponse response) throws IOException {
-	System.out.println("removendo dados da empresa");
 	String paramId = request.getParameter("id");
 	Integer id = Integer.valueOf(paramId);
 	System.out.println(id);

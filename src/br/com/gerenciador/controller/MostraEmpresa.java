@@ -13,7 +13,6 @@ public class MostraEmpresa implements Controlador {
 
     public String executa(HttpServletRequest request, HttpServletResponse response)
 	    throws ServletException, IOException {
-	System.out.println("mostrando empresa");
 	String paramId = request.getParameter("id");
 	Integer id = Integer.valueOf(paramId);
 

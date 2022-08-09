@@ -18,8 +18,6 @@ public class Login implements Controlador {
 	String login = request.getParameter("login");
 	String senha = request.getParameter("senha");
 
-	System.out.println("Logando " + login);
-
 	Banco banco = new Banco();
 	Usuario usuario = banco.verificarUsuario(login, senha);
 

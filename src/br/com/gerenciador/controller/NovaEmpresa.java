@@ -16,7 +16,6 @@ public class NovaEmpresa implements Controlador {
 
     public String executa(HttpServletRequest request, HttpServletResponse response)
 	    throws ServletException, IOException {
-	System.out.println("Cadastrando nova empresa.");
 	String nomeEmpresa = request.getParameter("nome");
 	String dataEmpresa = request.getParameter("data");
 

@@ -20,7 +20,6 @@ public class AlteraEmpresa implements Controlador {
 	String dataEmpresa = request.getParameter("data");
 	String paramId = request.getParameter("id");
 	Integer id = Integer.valueOf(paramId);
-	System.out.println("alterando dados da empresa " + id);
 
 	Date dataAbertura = null;
 	try {
