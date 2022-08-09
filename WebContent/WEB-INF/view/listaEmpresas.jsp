@@ -8,9 +8,13 @@
 <meta charset="ISO-8859-1">
 <title>Lista de empresas</title>
 </head>
-<body>	
-
-	Usuario logado: ${usuarioLogado.login} <br/>
+<body>
+	<c:import url="logout-parcial.jsp" />
+		
+	Usuario logado: ${usuarioLogado.login} 
+	<br/>
+	<br/>
+	<br/>
 
 	<c:if test="${not empty empresa}">
 		Empresa cadastrada com sucesso!
